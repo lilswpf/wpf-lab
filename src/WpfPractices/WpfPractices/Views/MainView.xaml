@@ -15,5 +15,8 @@
         <TabItem Header="Coerce">
             <ContentControl Margin="20" prism:RegionManager.RegionName="CoerceSampleRegion" />
         </TabItem>
+        <TabItem Header="Path &amp; Mouse">
+            <ContentControl Margin="20" prism:RegionManager.RegionName="PathMouseInteractionRegion" />
+        </TabItem>
     </TabControl>
 </UserControl>
