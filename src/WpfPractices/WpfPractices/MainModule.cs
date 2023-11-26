@@ -1,6 +1,7 @@
 ﻿using Prism.Ioc;
 using Prism.Modularity;
 using Prism.Regions;
+using WpfPractices.Samples;
 using WpfPractices.Views;
 
 namespace WpfPractices
@@ -19,6 +20,7 @@ namespace WpfPractices
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
             regionManager.RegisterViewWithRegion<MainView>("MainRegion");
+            regionManager.RegisterViewWithRegion<CoerceSample>("CoerceSampleRegion");
         }
     }
 }

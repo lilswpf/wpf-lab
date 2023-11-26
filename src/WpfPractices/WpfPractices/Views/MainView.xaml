@@ -11,5 +11,9 @@
     d:DesignWidth="800"
     prism:ViewModelLocator.AutoWireViewModel="True"
     mc:Ignorable="d">
-    <TextBlock Text="{Binding HelloText}" />
+    <TabControl Margin="10" TabStripPlacement="Left">
+        <TabItem Header="Coerce">
+            <ContentControl Margin="20" prism:RegionManager.RegionName="CoerceSampleRegion" />
+        </TabItem>
+    </TabControl>
 </UserControl>
