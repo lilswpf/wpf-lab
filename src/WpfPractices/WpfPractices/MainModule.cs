@@ -22,6 +22,7 @@ namespace WpfPractices
             regionManager.RegisterViewWithRegion<MainView>("MainRegion");
             regionManager.RegisterViewWithRegion<CoerceSample>("CoerceSampleRegion");
             regionManager.RegisterViewWithRegion<PathMouseInteractionSample>("PathMouseInteractionRegion");
+            regionManager.RegisterViewWithRegion<TimerTest>("TimerTestRegion");
         }
     }
 }

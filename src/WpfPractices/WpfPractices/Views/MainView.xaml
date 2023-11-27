@@ -18,5 +18,8 @@
         <TabItem Header="Path &amp; Mouse">
             <ContentControl Margin="20" prism:RegionManager.RegionName="PathMouseInteractionRegion" />
         </TabItem>
+        <TabItem Header="Timer Test">
+            <ContentControl Margin="20" prism:RegionManager.RegionName="TimerTestRegion" />
+        </TabItem>
     </TabControl>
 </UserControl>

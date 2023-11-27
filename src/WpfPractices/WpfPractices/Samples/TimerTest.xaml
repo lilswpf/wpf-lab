@@ -1,0 +1,24 @@
+﻿<UserControl
+    x:Class="WpfPractices.Samples.TimerTest"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    prism:ViewModelLocator.AutoWireViewModel="True"
+    mc:Ignorable="d">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left">
+            <TextBlock>
+                点击 Start 启动后，计时器会开始倒数<Run Text="{Binding TotalSeconds}" />
+                秒，每次点击 Reset，都会重置时间</TextBlock>
+            <TextBlock Text="{Binding Message}" />
+            <UniformGrid Rows="1">
+                <Button Command="{Binding StartCommand}" Content="Start" />
+                <Button Command="{Binding ResetCommand}" Content="Reset" />
+            </UniformGrid>
+        </StackPanel>
+    </Grid>
+</UserControl>
